@@ -181,7 +181,7 @@ class QueryClient(object):
         return self._get(mcf=True, prefixer=self._to_mcf_param, *args, **kwargs)
 
     def get_ga(self, *args, **kwargs):
-        return self._get(mcf=True, prefixer=self._to_ga_param, *args, **kwargs)
+        return self._get(mcf=False, prefixer=self._to_ga_param, *args, **kwargs)
 
     def _get(self, ids, start_date, end_date, metrics, prefixer,
             dimensions=None, filters=None, mcf=False,
